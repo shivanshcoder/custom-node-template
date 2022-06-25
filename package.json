@@ -1,0 +1,34 @@
+{
+  "name": "lower-case",
+  "version": "1.0.0",
+  "description": "Lower Case the Payload",
+  "node-red": {
+    "nodes": {
+      "lower-case": "src/lower-case.js"
+    }
+  },
+  "scripts": {
+    "build": "rimraf lower-case && rollup -c rollup.config.js && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node-red",
+    "javascript",
+    "function",
+    "node"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.56.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "@types/node-red": "^1.2.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "javascript-interface-library": "^1.0.0",
+    "node-red": "^2.2.2"
+  }
+}
